@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Michael J Caunce</title>
+</head>
+<body>
+  <!-- <header>
+    <a href="fullpage.html" class="logo">Michael Caunce</a>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="scroll.html">About</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </nav>
+  </header> -->
+
+
+  <!-- Start of navigation -->
+  <div class="navigation">
+    <!-- Start of checkbox hack -->
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle" autocomplete="off">
+    <label for="navi-toggle" class="navigation__button">
+      <span class="navigation__icon">&nbsp;</span>
+    </label>
+    <div class="navigation__background">&nbsp;</div>
+    <!-- Start of links -->
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="index.html" class="navigation__link">Home</a></li>
+        <li class="navigation__item"><a href="about.html" class="navigation__link">About</a></li>
+        <li class="navigation__item"><a href="projects.html" class="navigation__link">Projects</a></li>
+        <li class="navigation__item"><a href="contact.html" class="navigation__link">Contact</a></li>
+      </ul>
+
+    </nav>
+  </div>
+  <div class="page__wrapper">
+    <section class="hero hero-pages">
+      <div class="hero__logo-box">
+        <a href="index.html">
+          <img src="images/mini-logo.png" alt="Company logo" class="hero__logo">
+        </a>
+      </div>
+      <div class="inner">
+        <div class="clipper">
+          <h1>Michael J Caunce</h1>
+          <h2>Drop me a line</h2>
+        </div>
+        <div class="anim-panel">
+          <a href="index.html" class="read-btn primary">Thanks for stopping by</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="sidebar sidebar-contact">
+      <div class="inner">
+        <div class="clipper">
+          <h2 class="h2-border h2-border-l">Get in Touch</h2>
+        </div>
+        <div class="anim-panel">
+          <p class="large-text">Based in the North West, I am a recent graduate from Edge Hill with aspirations of working within the web industry.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ullam esse nobis quam at soluta alias dolorum expedita ratione. Voluptatibus in eligendi delectus dolores numquam molestias nihil dolor laborum labore?</p>
+          <form name="contact" method="POST" data-netlify="true">
+            <label class="name">Name:
+              <input type="text" name="name">
+            </label>
+            <label class="email">Email:
+              <input name="email">
+            </label>
+            <label class="message">Message:
+              <textarea name="message" ></textarea>
+            </label>
+            <div class="captcha" data-netlify-recaptcha="true"></div>
+            <input class="button" type="submit" value="SEND">
+          </form>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  <script>
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+      window.addEventListener("load", function(e) {
+
+        document.body.style.display = "block";
+
+        var tl = new TimelineMax();
+        tl.staggerFrom('section', 2, {
+          opacity: 0,
+          scale: .5,
+          ease: Power2.easeOut
+        }, 0.2)
+
+        tl.staggerFrom('h1, h2', .5, {
+          opacity: 0,
+          y: -40,
+          ease: Power2.easeInOut
+        }, 0.2, "-=2")
+
+        tl.staggerFrom('.anim-panel', 1, {
+          opacity: 0,
+          y: -40,
+          ease: Power2.easeInOut
+        }, 0.2, "-=1.5")
+
+      });
+    });
+
+
+  </script>
+</body>
+</html>

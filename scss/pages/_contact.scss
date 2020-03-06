@@ -1,0 +1,58 @@
+.sidebar-contact {
+
+  h2 {
+    font-size: 1.7rem;
+
+    @include mq-l {
+      font-size: 2.2rem;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    @include mq-l {
+      width: 75%;
+    }
+
+    label {
+      display: block;
+      margin-top: 1em;
+      color: $color-black;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      display: block;
+      padding: .5em;
+      width: 100%;
+      border: 2px solid $color-accent;
+    }
+
+    .button {
+      display: block;
+      width: 20%;
+      margin-right: auto;
+      margin-top: 1em;
+      background: $color-accent;
+      color: $color-white;
+      cursor: pointer;
+      transition: transform .3s;
+      border: none;
+  
+      &:hover {
+        background: $color-primary;
+      }
+    }
+
+  }
+
+  .captcha {
+    margin-top: 1em;
+    display: block;
+    width: 20%;
+  }
+
+  
+}

@@ -1,0 +1,67 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body, html {
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  font-family: 'Nanum Gothic', sans-serif;
+  display: none;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.h2-border {
+  &::before {
+    content: '';
+    width: 1em;
+    height: 3px;
+    background: $color-accent;
+    display: block;
+    margin-bottom: .2em;
+  }
+
+  &::after {
+    content: '';
+    width: 3em;
+    height: 3px;
+    background: $color-accent;
+    display: block;
+    margin-top: .2em;
+    
+  }
+}
+
+.h2-border-l {
+  &::before {
+    content: '';
+    margin-bottom: .4em;
+  }
+
+  &::after {
+    content: '';
+    margin-top: .4em;
+    
+  }
+}
+
+.read-btn {
+  text-decoration: none;
+  color: $color-primary;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+

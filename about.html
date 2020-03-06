@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Michael J Caunce</title>
+</head>
+<body>
+  <!-- <header>
+    <a href="fullpage.html" class="logo">Michael Caunce</a>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="scroll.html">About</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </nav>
+  </header> -->
+
+
+  <!-- Start of navigation -->
+  <div class="navigation">
+    <!-- Start of checkbox hack -->
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle" autocomplete="off">
+    <label for="navi-toggle" class="navigation__button">
+      <span class="navigation__icon">&nbsp;</span>
+    </label>
+    <div class="navigation__background">&nbsp;</div>
+    <!-- Start of links -->
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="index.html" class="navigation__link">Home</a></li>
+        <li class="navigation__item"><a href="about.html" class="navigation__link">About</a></li>
+        <li class="navigation__item"><a href="projects.html" class="navigation__link">Projects</a></li>
+        <li class="navigation__item"><a href="contact.html" class="navigation__link">Contact</a></li>
+      </ul>
+
+    </nav>
+  </div>
+  <div class="page__wrapper">
+    <section class="hero hero-pages">
+      <div class="hero__logo-box">
+        <a href="index.html">
+          <img src="images/mini-logo.png" alt="Company logo" class="hero__logo">
+        </a>
+      </div>
+      <div class="inner">
+        <div class="clipper">
+          <h1>Michael J Caunce</h1>
+          <h2>Get to know me</h2>
+        </div>
+        <div class="anim-panel">
+          <a href="projects.html" class="read-btn primary">Latest Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="sidebar sidebar-about">
+      <div class="inner">
+        <div class="clipper">
+          <h2 class="h2-border h2-border-l">About Me</h2>
+        </div>
+        <div class="anim-panel">
+          <p class="large-text">Based in the North West, I am a recent graduate from Edge Hill with aspirations of working within the web industry. I have recently completed a BSc in Web Design & Development, where I achieved an overall first-class classification.</p>
+          <p>I am an ambitious, personable and driven individual with a track record demonstrating passion, resilience and determination, shown by recently being awarded the ‘Academic Achievement Award’. Throughout my degree, I have acquired knowledge and experience in HTML5, CSS3, JavaScript, UX, PHP, Laravel, Version Control, Gulp, Sass, MySQL, the BEM methodology and extensive research skills.</p>
+            <p>As a recent graduate, I continue to upskill as an active Udemy student where I have completed courses in Wordpress, React and Laravel. I am now actively seeking a junior or graduate role in web design and development as a front-end developer where I can demonstrate my passion for all things creative and technological I am eager to utilise my interpersonal skills and enhance the foundation of knowledge I have acquired throughout my degree.</p>
+            <svg width="200" height="200" viewBox="0 0 786 292" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d)">
+              <path d="M7 103C10.6949 139.515 12.7352 175.699 14.5556 212.333C14.571 212.645 15.3865 227.45 15.8889 226.333C20.86 215.286 21.3885 200.976 22.5556 189.222C26.5983 148.506 26.6347 106.794 34.5556 66.5555C39.246 42.7279 43.262 75.8769 45.8889 84.3333C52.3706 105.199 60.6289 125.312 70.5556 144.778C75.7191 154.903 81.6006 169.117 90.1111 177.222C96.5123 183.319 113.552 141.302 114.333 139.667C121.478 124.722 129.067 109.998 134.556 94.3333C134.732 93.8288 139.1 79.1911 139.889 81C151.612 107.866 153.735 136.032 171.667 160.333C172.81 161.883 178.398 171.658 181.889 168.333C189.597 160.993 194.863 148.464 200.111 139.444C204.455 131.98 209.629 117.911 217.667 113.222C221.375 111.059 228.315 124.367 229.667 125.889C255.046 154.471 282.352 144.015 313.444 142.111C355.231 139.553 395.809 106.509 405.222 65.6667C405.861 62.8949 412.952 -0.541743 399 3.44443C394.34 4.77576 393.785 26.295 395.444 30.1111C396.414 32.3409 401.734 35.7699 403.222 37.2222C413.12 46.8789 423.002 56.5422 434.333 64.5555C449.36 75.1824 473.552 88.0495 492.111 77.4444C498.574 73.7512 500.068 77.7183 506.333 81C520.555 88.4493 539.447 84.6636 553.889 80.1111C571.541 74.5469 588.707 66.1475 605 57.4444C607.172 56.2843 612.495 52.7264 610.111 52.1111C605.497 50.9204 581.839 50.7734 581.667 50.7778C508.158 52.6155 421.324 69.0854 361.444 115.222C344.611 128.193 384.704 124.32 390.778 124.556C429.766 126.068 469.092 124.988 507.889 128.556C530.248 130.612 554.498 130.779 577 131C583.041 131.059 605.468 128.615 587 132.333C474.695 154.945 361.263 171.074 249.222 195.222C195.908 206.713 142.619 218.814 89.6667 231.889C79.4039 234.423 66.8262 236.035 58.5556 243.444C49.3891 251.656 38.0748 257.69 29.2222 266.111C24.467 270.634 41.135 272.36 47.6667 273C120.164 280.108 194.057 279.297 266.778 280.111C437.672 282.024 608.309 278.848 779 271" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+              <filter id="filter0_d" x="0.499817" y="0.764236" width="785" height="290.389" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+              <feOffset dy="4"/>
+              <feGaussianBlur stdDeviation="2"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+              </filter>
+              </defs>
+              </svg>
+
+        </div>
+      </div>
+
+      <div class="inner">
+        <div class="anim-panel">
+          <div class="about-border"></div>
+          <img src="images/about.jpg" alt="A greyscale photo of the Michael Caunce, the creator and person of whom this portfolio belongs to. Michael is in deep thought whilst enjoying the view from Old Wardour Castle">
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  <script>
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+      window.addEventListener("load", function(e) {
+
+        document.body.style.display = "block";
+
+        var tl = new TimelineMax();
+        tl.staggerFrom('section', 2, {
+          opacity: 0,
+          scale: .5,
+          ease: Power2.easeOut
+        }, 0.2)
+
+        tl.staggerFrom('h1, h2', .5, {
+          opacity: 0,
+          y: -40,
+          ease: Power2.easeInOut
+        }, 0.2, "-=2")
+
+        tl.staggerFrom('.anim-panel', 1, {
+          opacity: 0,
+          y: -40,
+          ease: Power2.easeInOut
+        }, 0.2, "-=1.5")
+
+      });
+    });
+
+
+  </script>
+</body>
+</html>

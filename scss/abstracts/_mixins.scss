@@ -1,0 +1,18 @@
+
+@mixin mq($width: 50em) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin mq-l($width: 75em) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin mq-xl($width: 110em) {
+  @media (min-width: $width) {
+    @content;
+  }
+}

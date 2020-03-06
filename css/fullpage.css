@@ -1,0 +1,29 @@
+h1 {
+  text-align: center;
+  color: white; }
+
+.s1 {
+  background: url("../images/image-2.jpg");
+  background-size: cover; }
+
+.s2 {
+  background: url("../images/image-1.jpg");
+  background-size: cover; }
+  .s2 h1 {
+    text-align: left;
+    margin-left: 2em;
+    font-size: 4rem; }
+
+.s3 {
+  background: url("../images/image-3.jpg");
+  background-size: cover; }
+  .s3 h1 {
+    text-align: left;
+    margin-left: 2em;
+    font-size: 2rem; }
+
+span {
+  background: white !important; }
+
+.fp-slidesNav.fp-bottom {
+  margin-left: 2em !important; }

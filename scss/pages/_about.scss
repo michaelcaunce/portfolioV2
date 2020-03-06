@@ -1,0 +1,56 @@
+.sidebar-about {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 3em;
+
+  @include mq {
+    margin-top: 5em;
+  }
+
+  @include mq-l {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 6em;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+
+    @include mq-l {
+      font-size: 2.2rem;
+    }
+  }
+
+  img {
+    display: none;
+
+    @include mq-l {
+      display: block;
+      max-width: 20vw;
+      
+    }
+  }
+
+  .about-border {
+    display: none;
+
+    @include mq-l {
+      display: block;
+      position: absolute;
+      border: .3rem solid $color-accent;
+      width: 300px;
+      height: 200px;
+      top: 5rem;
+      left: -4rem;
+      z-index: 1;
+    }
+
+    @include mq-xl {
+      width: 400px;
+      height: 400px;
+      top: 4rem;
+      left: -3rem;
+   
+    }
+    
+  }
+}

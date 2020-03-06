@@ -1,0 +1,57 @@
+.hero {
+  padding-top: 8em;
+  background-image: linear-gradient(
+    rgba($color-primary-dark, .73),
+    rgba($color-black, .93)),
+    url(../images/hero-4.jpg);
+  background-repeat:no-repeat;
+  // background-attachment:fixed;  
+  background-size: cover;
+  background-position: center;
+
+  h1 {
+    color: $color-accent;
+    font-size: 3em;
+
+    @include mq {
+      font-size: 4em;
+    }
+  }
+
+  h2 {
+    color: $color-primary;
+    font-size: 1.5em;
+
+    @include mq {
+      font-size: 2.2em;
+    }
+  }
+
+  &__logo-box {
+    position: absolute;
+    /* Place the logo where we want using top and left below */
+    top: 1rem;
+    left: 1rem;
+
+    @include mq {
+      top: 3rem;
+      left: 3rem;
+    }
+  }
+  
+  /* Define the size of the logo */
+  &__logo {
+    height: 3rem;
+
+    @include mq {
+      height: 4rem;
+    }
+  }
+}
+
+.hero-pages {
+  background-image: linear-gradient(
+    rgba($color-primary-dark, .83),
+    rgba($color-black, .83)),
+    url(../images/hero-3.jpg);
+}

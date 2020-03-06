@@ -1,0 +1,89 @@
+section {
+  padding: 3em;
+
+  h1, h2, .read-btn {
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  p  {
+    margin-top: 1em;
+  }
+
+  .clipper {
+    overflow: hidden;
+  }
+
+  .primary {
+    padding: 1.5em 1.5em 1.5em calc(3em + 1px);
+    border: 1px solid $color-accent;
+    display: inline-block;
+    margin-top: 3em;
+    margin-left: -3em;
+
+    &:hover {
+      border: 1px solid $color-primary;
+      color: $color-accent;
+    }
+  }
+}
+
+section.sidebar, section.subscribe {
+  font-size: .8rem;
+  line-height: 1.6em;
+
+  .read-btn {
+    font-size: .9rem;
+    margin-top: 3em;
+    display: block;
+
+    &:hover {
+      color: $color-accent;
+      font-weight: bold;
+    }
+  }
+
+  @include mq-l {
+    font-size: .9rem;
+  }
+
+}
+
+section.sidebar {
+  background: $color-white;
+}
+
+section.subscribe {
+  background-color: $color-offwhite;
+
+  .social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-top: 3em;
+
+    @include mq {
+      margin-left: -2.5em;
+    }
+
+    // Styling the icons
+    .social-icon {
+      margin-top: 2em;
+      flex-basis: 15%;
+
+
+      svg {
+        width: 2em;
+        height: 1.8em;
+        fill: $color-accent;
+        transition: transform .3s;
+
+        &:hover {
+          fill: $color-primary;
+        }
+      }
+    }
+  }
+}
